@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Skill Bars</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+       body {
+  background: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.line::before {
+  content: '';
+  display: block;
+  height: 100%;
+  background: green;
+  width: 0;
+  animation: loadSkill 2s ease-in-out forwards;
+}
+
+@keyframes loadSkill {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: var(--skill-level);
+  }
+}
+
+    </style>
+</head>
+<body>
+    <section id="skills" class="mx-auto px-[10%] py-10 h-full ">
+        <div class="text-center mb-10">
+          <h2 class="underline">My Skills</h2>
+          <p class="text-secondary text-h6">What I Know</p>
+        </div>
+      
+        <div class="flex max-[990px]:flex-col flex-wrap m-5 gap-5">
+          <div class="flex-1 p-1">
+            <p class="text-h5">My creative skills & experiences.</p>
+            <p class="text-justify mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nulla veniam expedita consequuntur, explicabo eius alias dolore voluptates veritatis eaque? Iusto debitis necessitatibus, eius nostrum modi distinctio omnis dolorem amet laborum maxime exercitationem quidem delectus quibusdam alias placeat. Impedit porro nisi voluptate repudiandae, excepturi reiciendis quos ipsum cumque non. Et.</p>
+            <button type="button" class="p-2 m-4 rounded-2xl">Read More</button>
+          </div>
+      
+          <div class="flex-1">
+            <div class="mb-3">
+              <div class="flex justify-between items-center text-white mb-1">
+                <span>HTML</span>
+                <span>90%</span>
+              </div>
+              <div class="line h-[5px] w-full bg-white relative" data-skill="90%"></div>
+            </div>
+      
+            <div class="mb-3">
+              <div class="flex justify-between items-center text-white mb-1">
+                <span>CSS</span>
+                <span>85%</span>
+              </div>
+              <div class="line h-[5px] w-full bg-white relative" data-skill="85%"></div>
+            </div>
+      
+            <div class="mb-3">
+              <div class="flex justify-between items-center text-white mb-1">
+                <span>JAVASCRIPT</span>
+                <span>70%</span>
+              </div>
+              <div class="line h-[5px] w-full bg-white relative" data-skill="70%"></div>
+            </div>
+      
+            <div class="mb-4">
+              <div class="flex justify-between items-center text-white mb-1">
+                <span>TAILWIND CSS</span>
+                <span>90%</span>
+              </div>
+              <div class="line h-[5px] w-full bg-white relative" data-skill="90%"></div>
+            </div>
+      
+            <div class="mb-3">
+              <div class="flex justify-between items-center text-white mb-1">
+                <span>REACT JS</span>
+                <span>65%</span>
+              </div>
+              <div class="line h-[5px] w-full bg-white relative" data-skill="65%"></div>
+            </div>
+      
+            <div class="mb-3">
+              <div class="flex justify-between items-center text-white mb-1">
+                <span>REDUX</span>
+                <span>70%</span>
+              </div>
+              <div class="line h-[5px] w-full bg-white relative" data-skill="70%"></div>
+            </div>
+      
+            <div class="mb-3">
+              <div class="flex justify-between items-center text-white mb-1">
+                <span>GIT</span>
+                <span>75%</span>
+              </div>
+              <div class="line h-[5px] w-full bg-white relative" data-skill="75%"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+  const lines = document.querySelectorAll('.line');
+  lines.forEach(line => {
+    const skillLevel = line.getAttribute('data-skill');
+    line.style.setProperty('--skill-level', skillLevel);
+  });
+});
+
+      </script>
+</body>
+</html>
