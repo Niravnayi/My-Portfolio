@@ -6,7 +6,7 @@ tailwind.config = {
       secondary: "#61892f",
       yellow:"#ffcd47",
       red:"#FF474C",
-      box: "#18191b",
+      box: "#222",
       content: "#4e4e4e",
       white: "#fff",
       green: "#7fb044",
