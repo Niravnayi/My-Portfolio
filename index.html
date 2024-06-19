@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.js"></script>
+    <script
+      src="https://kit.fontawesome.com/ddea762b36.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="./tailwind.js"></script>
-  <script src="https://kit.fontawesome.com/ddea762b36.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./style.css" />
-
-  <style type="text/tailwindcss">
-    @layer base {
+    <style type="text/tailwindcss">
+      @layer base {
         h1 {
           @apply text-h1 font-open  text-white;
         }
@@ -73,587 +75,835 @@
         }
       }
     </style>
-</head>
+  </head>
 
-<body>
-  <main>
-    <section id="home" class="flex flex-col mx-auto px-[10%] py-10 h-screen">
-      <div class="container flex items-center">
-        <header class="flex justify-between items-center w-full">
-          <a href="#" class="flex items-center">
-            <h2><span class="text-secondary text-h1">N</span>IRAV</h2>
-            <span class="sr-only">Nirav logo</span>
-          </a>
-          <div class="max-[989px]:block min-[990px]:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" class="fill-white" height="40px" viewBox="0 -960 960 960"
-              width="40px" fill="#e8eaed">
-              <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-            </svg>
-          </div>
-          <div class="max-[990px]:hidden flex gap-5 items-center">
-            <nav>
-              <ul class="flex gap-10 items-center">
-                <li><a href="#home" class="nav">Home</a></li>
-                <li><a href="#about" class="nav">About</a></li>
-                <li><a href="#services" class="nav">Services</a></li>
-                <li><a href="#skills" class="nav">Skills</a></li>
-                <li><a href="#tasks" class="nav">Tasks</a></li>
-              </ul>
-            </nav>
-            <div>
-              <button class="btn-37 ml-5 rounded-3xl">
-                <span class="new">Get in touch</span>
-                <div class="old">
-                  <span>Connect💬</span>
-                  <span aria-hidden>Connect💬</span>
-                </div>
+  <body>
+    <main>
+      <section id="home" class="flex flex-col mx-auto px-[10%] py-10 h-screen">
+        <div class="container flex items-center">
+          <header class="flex justify-between items-center w-full">
+            <a href="#" class="flex items-center">
+              <h2><span class="text-secondary text-h1">N</span>IRAV</h2>
+              <span class="sr-only">Nirav logo</span>
+            </a>
+            <div class="max-[989px]:block min-[990px]:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="fill-white"
+                height="40px"
+                viewBox="0 -960 960 960"
+                width="40px"
+                fill="#e8eaed"
+              >
+                <path
+                  d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+                />
+              </svg>
+            </div>
+            <div class="max-[990px]:hidden flex gap-5 items-center">
+              <nav>
+                <ul class="flex gap-10 items-center">
+                  <li><a href="#home" class="nav">Home</a></li>
+                  <li><a href="#about" class="nav">About</a></li>
+                  <li><a href="#services" class="nav">Services</a></li>
+                  <li><a href="#skills" class="nav">Skills</a></li>
+                  <li><a href="#tasks" class="nav">Tasks</a></li>
+                </ul>
+              </nav>
+
+              <a href="#connect">
+              <button class="button">
+                <span class="button-content">Connect🤝 </span>
               </button>
-              <span class="sr-only">Connect💬</span>
+            </a>
+              
+            </div>
+          </header>
+        </div>
+
+        <div class="flex h-full items-center mt-20">
+          <div
+            class="basis-[60%] min-[320px]:w-full flex flex-grow-[600px] flex-col justify-center"
+          >
+            <h2 class="font-bold md:text-h3 min-[320px]:text-h4">
+              Hello,My Name Is
+            </h2>
+            <h2 class="md:text-[80px] min-[320px]:text-[40px]">
+              <span class="text-secondary">N</span>irav
+              <span class="text-secondary">N</span>ayi
+            </h2>
+            <div
+              class="flex max-[678px]:items-center md:gap-5 min-[320px]:gap-2"
+            >
+              <h3 class="md:text-[40px] min-[320px]:text-h5">I'm A</h3>
+              <img
+                class="mt-2 md:max-w-[70%] min-[320px]:max-w-[70%]"
+                src="https://readme-typing-svg.herokuapp.com?font=Righteous&size=35&duration=4000&pause=500&color=61892F&random=false&width=435&lines=Front-End+Developer;Web+Developer;Freelancer"
+                alt="Typing SVG"
+              />
+            </div>
+
+            <!-- Buttons -->
+            <ul class="example-2 mt-[30px]">
+              <li class="icon-content">
+                <a
+                  href="https://www.linkedin.com/in/nirav-nayi/"
+                  target="_blank"
+                  aria-label="LinkedIn"
+                  data-social="linkedin"
+                >
+                  <div class="filled"></div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-linkedin"
+                    viewBox="0 0 16 16"
+                    xml:space="preserve"
+                  >
+                    <path
+                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </a>
+                <div class="tooltip">LinkedIn</div>
+              </li>
+              <li class="icon-content">
+                <a
+                  href="https://github.com/Niravnayi"
+                  target="_blank"
+                  aria-label="GitHub"
+                  data-social="github"
+                >
+                  <div class="filled"></div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-github"
+                    viewBox="0 0 16 16"
+                    xml:space="preserve"
+                  >
+                    <path
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </a>
+                <div class="tooltip">GitHub</div>
+              </li>
+              <li class="icon-content">
+                <a
+                  href="https://www.instagram.com/__nirav27.__/"
+                  target="_blank"
+                  aria-label="Instagram"
+                  data-social="instagram"
+                >
+                  <div class="filled"></div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-instagram"
+                    viewBox="0 0 16 16"
+                    xml:space="preserve"
+                  >
+                    <path
+                      d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </a>
+                <div class="tooltip">Instagram</div>
+              </li>
+              <li class="icon-content">
+                <a href="#" aria-label="Twitter" data-social="Twitter">
+                  <div class="filled"></div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 512 512"
+                  >
+                    <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                      d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+                    />
+                  </svg>
+                </a>
+                <div class="tooltip">Twitter</div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- <div class="rounded-md basis-[35%] max-[990px]:hidden overflow-hidden">
+          <img class="h-full rounded-3xl object-contain " src="./imges/Hero.jpg" alt="Auther_img" />
+        </div> -->
+        </div>
+      </section>
+      <section id="about" class="mx-auto px-[10%] py-10 h-fit">
+        <div class="h-full">
+          <div class="text-center">
+            <h2 class="underline">About Me</h2>
+            <h3 class="text-secondary text-h6">Who i am</h3>
+          </div>
+
+          <div
+            class="flex flex-wrap max-[768px]:flex-col justify-center max-[990px]:items-center gap-10 w-full mt-10"
+          >
+            <div class="basis-[35%]">
+              <img
+                class="rounded-2xl h-[500px] object-contain w-fit duration-500 hover:rounded-[40%]"
+                src="./imges/hero1.jpeg"
+                alt="Auther_img"
+              />
+            </div>
+
+            <div class="flex-1">
+              <div class="flex items-center gap-3">
+                <!-- <p class="lg:text-h3 max-w-fit font-semibold text-h6 " > I'm Nirav</p> -->
+                <p class="text-h3">I'am</p>
+                <span class="w-fit"
+                  ><img
+                    class="mt-5 w-fit"
+                    src="https://readme-typing-svg.herokuapp.com?font=Righteous&size=35&duration=4000&pause=500&color=61892F&random=false&width=435&lines=Front-End+Developer;Web+Developer;Freelancer"
+                    alt="Typing SVG"
+                /></span>
+              </div>
+              <p class="text-justify mt-5">
+                Crafting Intuitive And Responsive Web Experiences With A Passion
+                For Innovation And Creativity, I'm Rishabh Shah, A 21 Year Old
+                Frontend Developer Currently Completing My Final Year Of B.Tech
+                Studies. Excited To Dive Into The World Of Web Development And
+                Create Engaging User Experiences.
+              </p>
+
+              <ul class="mt-5 list">
+                <li>Profession (Frontend Developer)</li>
+                <li>Education (BCA Student)</li>
+                <li>Skills (Intuitive And Responsive Web Experiences)</li>
+                <li>Personality (Passionate, Innovative, And Creative)</li>
+              </ul>
+              <!-- Resume button -->
+             <a href="./Nirav Resume .pdf" target="_blank" rel="noopener noreferrer">
+              <button class="button mt-5" >
+                <span class="button-content">Resume 📑 </span>
+              </button>
+            </a>
+              
             </div>
           </div>
-        </header>
-      </div>
+        </div>
+        <!-- </div> -->
+      </section>
 
-      <div class="flex max-[990px]:flex-col gap-5 h-full items-center justify-center mt-20">
-        <div class="basis-[60%] min-[320px]:w-full flex flex-grow-[600px] flex-col justify-center">
-          <h2 class="font-bold md:text-h3 min-[320px]:text-h4">
-            Hello,My Name Is
-          </h2>
-          <h2 class="md:text-[60px] min-[320px]:text-[40px]">
-            <span class="text-secondary">N</span>irav
-            <span class="text-secondary">N</span>ayi
-          </h2>
-          <div class="flex max-[678px]:items-center md:gap-5 min-[320px]:gap-2">
-            <h3 class="md:text-[40px] min-[320px]:text-h5">I'm A</h3>
-            <img class="mt-2 md:max-w-[70%] min-[320px]:max-w-[70%]"
-              src="https://readme-typing-svg.herokuapp.com?font=Righteous&size=35&duration=4000&pause=500&color=61892F&random=false&width=435&lines=Front-End+Developer;Web+Developer;Freelancer"
-              alt="Typing SVG" />
+      <section id="services" class="mx-auto px-[10%] py-10 h-full">
+        <div class="container h-fit">
+          <div class="text-center">
+            <h2 class="underline">My Services</h2>
+            <h3 class="text-secondary text-h6">What i provide</h3>
+          </div>
+          <div
+            class="containers grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 gap-4"
+          >
+            <!-- cards -->
+            <div class="card">
+              <div class="content">
+                <div class="back">
+                  <div class="back-content">
+                    <img
+                      class="h-full rounded-3xl object-contain"
+                      src="./imges/uxui.png"
+                      alt="uxui_img"
+                    />
+                  </div>
+                </div>
+                <div class="front">
+                  <div class="img">
+                    <div class="circle"></div>
+                    <div class="circle" id="right"></div>
+                    <div class="circle" id="bottom"></div>
+                  </div>
+
+                  <div class="front-content">
+                    <small class="badge text-[20px]">1</small>
+                    <div class="description">
+                      <div class="title">
+                        <p class="title text-h3 my-3">UX/UI Designer</p>
+                      </div>
+                      <div>
+                        <p class="m-4">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Error architecto dicta, possimus consequuntur a
+                          voluptatum.
+                        </p>
+                      </div>
+                      <p class="card-footer">
+                        <a href="#">Read More</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="content">
+                <div class="back">
+                  <div class="back-content">
+                    <img
+                      class="h-full rounded-3xl object-contain"
+                      src="./imges/wrb-devloper.webp"
+                      alt="Auther_img"
+                    />
+                  </div>
+                </div>
+                <div class="front">
+                  <div class="img">
+                    <div class="circle"></div>
+                    <div class="circle" id="right"></div>
+                    <div class="circle" id="bottom"></div>
+                  </div>
+
+                  <div class="front-content">
+                    <small class="badge text-[20px]">2</small>
+                    <div class="description">
+                      <div class="title">
+                        <p class="title text-h3 my-3">Web Designer</p>
+                      </div>
+                      <div>
+                        <p class="m-4">
+                          Passionate coder 🚀 | Sharing the joy of coding
+                          through posts and tutorials 💻 | Join me on this
+                          journey to explore the world of programming!
+                        </p>
+                      </div>
+                      <p class="card-footer">
+                        <a href="#">Read More</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="content">
+                <div class="back">
+                  <div class="back-content">
+                    <img
+                      class="h-full rounded-3xl object-contain"
+                      src="./imges/app-design.avif"
+                      alt="Auther_img"
+                    />
+                  </div>
+                </div>
+                <div class="front">
+                  <div class="img">
+                    <div class="circle"></div>
+                    <div class="circle" id="right"></div>
+                    <div class="circle" id="bottom"></div>
+                  </div>
+
+                  <div class="front-content">
+                    <small class="badge text-[20px]">3</small>
+                    <div class="description">
+                      <div class="title">
+                        <p class="title text-h3 my-3">App Designer</p>
+                      </div>
+                      <div>
+                        <p class="m-4">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Error architecto dicta, possimus consequuntur a
+                          voluptatum.
+                        </p>
+                      </div>
+                      <p class="card-footer">
+                        <a href="#">Read More</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="mx-auto px-[10%] py-10 h-full">
+        <div class="text-center mb-10">
+          <h2 class="underline">My Skills</h2>
+          <p class="text-secondary text-h6">What I Know</p>
+        </div>
+
+        <div class="flex max-[990px]:flex-col flex-wrap m-5 gap-5">
+          <div class="flex-1 p-1">
+            <p class="text-h5">My creative skills & experiences.</p>
+            <p class="text-justify mt-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nulla
+              veniam expedita consequuntur, explicabo eius alias dolore
+              voluptates veritatis eaque? Iusto debitis necessitatibus, eius
+              nostrum modi distinctio omnis dolorem amet laborum maxime
+              exercitationem quidem delectus quibusdam alias placeat. Impedit
+              porro nisi voluptate repudiandae, excepturi reiciendis quos ipsum
+              cumque non. Et.
+            </p>
+           
+            <a href="#"> 
+              <button class="button mt-5">
+                <span class="button-content">Read More🧾</span>
+              </button>
+              
+            </a>
           </div>
 
-          <!-- Buttons -->
-          <ul class="example-2 mt-[30px]">
-            <li class="icon-content">
-              <a href="https://www.linkedin.com/in/nirav-nayi-6b93572a2/" target="_blank" aria-label="LinkedIn"
-                data-social="linkedin">
-                <div class="filled"></div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  class="bi bi-linkedin" viewBox="0 0 16 16" xml:space="preserve">
-                  <path
-                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
-                    fill="currentColor"></path>
-                </svg>
-              </a>
-              <div class="tooltip">LinkedIn</div>
-            </li>
-            <li class="icon-content">
-              <a href="https://github.com/Niravnayi" target="_blank" aria-label="GitHub" data-social="github">
-                <div class="filled"></div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github"
-                  viewBox="0 0 16 16" xml:space="preserve">
-                  <path
-                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
-                    fill="currentColor"></path>
-                </svg>
-              </a>
-              <div class="tooltip">GitHub</div>
-            </li>
-            <li class="icon-content">
-              <a href="https://www.instagram.com/__nirav27.__/" target="_blank" aria-label="Instagram"
-                data-social="instagram">
-                <div class="filled"></div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  class="bi bi-instagram" viewBox="0 0 16 16" xml:space="preserve">
-                  <path
-                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
-                    fill="currentColor"></path>
-                </svg>
-              </a>
-              <div class="tooltip">Instagram</div>
-            </li>
-            <li class="icon-content">
-              <a href="#" aria-label="Twitter" data-social="Twitter">
-                <div class="filled"></div>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512">
+          <div class="flex-1">
+            <div class="mb-3">
+              <div class="flex justify-between items-center text-white mb-1">
+                <span>HTML</span>
+                <span>90%</span>
+              </div>
+              <div
+                class="line h-[6px] w-full bg-white relative"
+                data-skill="90%"
+              ></div>
+            </div>
+
+            <div class="mb-3">
+              <div class="flex justify-between items-center text-white mb-1">
+                <span>CSS</span>
+                <span>85%</span>
+              </div>
+              <div
+                class="line h-[6px] w-full bg-white relative"
+                data-skill="85%"
+              ></div>
+            </div>
+
+            <div class="mb-3">
+              <div class="flex justify-between items-center text-white mb-1">
+                <span>JAVASCRIPT</span>
+                <span>70%</span>
+              </div>
+              <div
+                class="line h-[5px] w-full bg-white relative"
+                data-skill="70%"
+              ></div>
+            </div>
+
+            <div class="mb-4">
+              <div class="flex justify-between items-center text-white mb-1">
+                <span>TAILWIND CSS</span>
+                <span>90%</span>
+              </div>
+              <div
+                class="line h-[6px] w-full bg-white relative"
+                data-skill="90%"
+              ></div>
+            </div>
+
+            <div class="mb-3">
+              <div class="flex justify-between items-center text-white mb-1">
+                <span>REACT JS</span>
+                <span>65%</span>
+              </div>
+              <div
+                class="line h-[6px] w-full bg-white relative"
+                data-skill="65%"
+              ></div>
+            </div>
+
+            <div class="mb-3">
+              <div class="flex justify-between items-center text-white mb-1">
+                <span>REDUX</span>
+                <span>70%</span>
+              </div>
+              <div
+                class="line h-[6px] w-full bg-white relative"
+                data-skill="70%"
+              ></div>
+            </div>
+
+            <div class="mb-3">
+              <div class="flex justify-between items-center text-white mb-1">
+                <span>GIT</span>
+                <span>75%</span>
+              </div>
+              <div
+                class="line h-[6px] w-full bg-white relative"
+                data-skill="75%"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="tasks" class="mx-auto px-[10%] py-10 h-full">
+        <div class="text-center mb-10">
+          <h2 class="underline">My Tasks</h2>
+          <p class="text-secondary text-h6">What I Do</p>
+        </div>
+
+        <div
+          class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5 justify-items-center items-center pb-10"
+        >
+          <div class="bg-box overflow-hidden px-9 py-6 rounded-lg w-fit">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img
+                class="task rounded-full object-cover h-[150px] w-[150px]"
+                src="./imges/portfolio1.webp"
+                alt="portfolio1"
+              />
+            </a>
+          </div>
+
+          <div class="bg-box overflow-hidden px-9 py-6 rounded-lg w-fit">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img
+                class="task rounded-full object-cover h-[150px] w-[150px]"
+                src="./imges/html-css.jpg"
+                alt="portfolio1"
+              />
+            </a>
+          </div>
+
+          <div class="bg-box overflow-hidden px-9 py-6 rounded-lg w-fit">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img
+                class="task rounded-full object-cover h-[150px] w-[150px]"
+                src="./imges/tic tac toe.png"
+                alt="portfolio1"
+              />
+            </a>
+          </div>
+
+          <div class="bg-box overflow-hidden px-9 py-6 rounded-lg w-fit">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img
+                class="task rounded-full object-cover h-[150px] w-[150px]"
+                src="./imges/Top-Ecommerce-Websites.jpg"
+                alt="portfolio1"
+              />
+            </a>
+          </div>
+
+          <div class="bg-box overflow-hidden px-9 py-6 rounded-lg w-fit">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img
+                class="task rounded-full object-cover h-[150px] w-[150px]"
+                src="./imges/Top-Ecommerce-Websites.jpg"
+                alt="portfolio1"
+              />
+            </a>
+          </div>
+
+          <div class="bg-box overflow-hidden px-9 py-6 rounded-lg w-fit">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img
+                class="task rounded-full object-cover h-[150px] w-[150px]"
+                src="./imges/javascript.png"
+                alt="portfolio1"
+              />
+            </a>
+          </div>
+
+          <div class="bg-box overflow-hidden px-9 py-6 rounded-lg w-fit">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img
+                class="task rounded-full object-cover h-[150px] w-[150px]"
+                src="./imges/movie-app.jpeg"
+                alt="portfolio1"
+              />
+            </a>
+          </div>
+
+          <div class="bg-box overflow-hidden px-9 py-6 rounded-lg w-fit">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img
+                class="task rounded-full object-cover h-[150px] w-[150px]"
+                src="./imges/quiz-app.jpeg"
+                alt="portfolio1"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="connect" class="mx-auto px-[10%] py-10 h-full">
+        <div>
+          <div class="text-center mb-10 p-5">
+            <h2 class="underline">Contact Me</h2>
+            <p class="text-secondary text-h6">Get in touch</p>
+          </div>
+
+          <div class="flex max-[990px]:flex-col gap-5">
+            <div class="flex-1 sm:p-3">
+              <div class="mb-5">
+                <h4 class="mb-3">Get in touch</h4>
+                <p class="text-justify">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                  nam atque laborum odio, repudiandae blanditiis porro sequi
+                  cumque, pariatur perspiciatis facere.
+                </p>
+              </div>
+              <div class="flex gap-5 items-center mb-5">
+                <svg
+                  class="h-[25px] fill-secondary"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                >
                   <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                   <path
-                    d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                    d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"
+                  />
+                </svg>
+
+                <div>
+                  <p class="font-semibold text-[18px]">Name</p>
+                  <p class="font-semibold text-[18px]">Nirav Nayi</p>
+                </div>
+              </div>
+
+              <div class="flex gap-5 items-center mb-5">
+                <svg
+                  class="h-[25px] fill-secondary"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                  <path
+                    d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"
+                  />
+                </svg>
+                <div>
+                  <p class="font-semibold text-[18px]">Phone</p>
+                  <p class="font-semibold text-[18px]">+91 78743 11210</p>
+                </div>
+              </div>
+
+              <div class="flex gap-5 items-center mb-5">
+                <svg
+                  class="h-[25px] w-[25px] fill-secondary"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                  <path
+                    d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+                  />
+                </svg>
+
+                <div>
+                  <p class="font-semibold text-[18px]">Email</p>
+                  <p
+                    class="font-semibold text-[18px] max-[550px]:text-[15px] max-[550px]:font-medium"
+                  >
+                    niravlimbachia031@gmail.com
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex-1 p-4">
+              <div class="font-semibold text-[20px] text-white">Message Me</div>
+
+              <div>
+                <form action="">
+                  <div
+                    class="flex max-[768px]:flex-col min-[768px]:gap-10 w-full"
+                  >
+                    <div class="form-control w-full">
+                      <input type="text" required="" />
+                      <label>
+                        <span style="transition-delay: 200ms">N</span
+                        ><span style="transition-delay: 250ms">a</span
+                        ><span style="transition-delay: 300ms">m</span
+                        ><span style="transition-delay: 350ms">e</span>
+                      </label>
+                    </div>
+
+                    <div class="form-control w-full">
+                      <input type="email" required="" />
+                      <label>
+                        <span style="transition-delay: 0ms">E</span
+                        ><span style="transition-delay: 50ms">m</span
+                        ><span style="transition-delay: 100ms">a</span
+                        ><span style="transition-delay: 150ms">i</span
+                        ><span style="transition-delay: 200ms">l</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="form-control w-full">
+                    <input type="text" required="" />
+                    <label>
+                      <span style="transition-delay: 0ms">S</span
+                      ><span style="transition-delay: 50ms">u</span
+                      ><span style="transition-delay: 100ms">b</span
+                      ><span style="transition-delay: 150ms">j</span
+                      ><span style="transition-delay: 200ms">e</span
+                      ><span style="transition-delay: 250ms">c</span
+                      ><span style="transition-delay: 300ms">t</span>
+                    </label>
+                  </div>
+
+                  <div class="form-control w-full">
+                    <textarea></textarea>
+                    <label>
+                      <span style="transition-delay: 0ms">M</span
+                      ><span style="transition-delay: 50ms">e</span
+                      ><span style="transition-delay: 100ms">s</span
+                      ><span style="transition-delay: 150ms">s</span
+                      ><span style="transition-delay: 200ms">a</span
+                      ><span style="transition-delay: 250ms">g</span
+                      ><span style="transition-delay: 300ms">e</span>
+                    </label>
+                  </div>
+
+                  <button class="button">
+                    <span class="button-content">Send Message💬 </span>
+                  </button>
+                  
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      id="footer"
+      class="bg-gray-900 p-10 font-[sans-serif] tracking-wide"
+    >
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="lg:flex lg:items-center">
+          <a href="javascript:void(0)">
+            <h2 class="flex md:text-[50px] min-[320px]:text-[40px]">
+              <span class="text-secondary">N</span>irav
+            </h2>
+          </a>
+        </div>
+
+        <div class="lg:flex lg:items-center">
+          <ul class="flex space-x-6">
+            <li>
+              <a href="https://www.instagram.com/__nirav27.__/" target="_blank">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="fill-white"
+                  viewBox="0 0 32 32"
+                  width="32px"
+                  height="32px"
+                >
+                  <path
+                    d="M 11.46875 5 C 7.917969 5 5 7.914063 5 11.46875 L 5 20.53125 C 5 24.082031 7.914063 27 11.46875 27 L 20.53125 27 C 24.082031 27 27 24.085938 27 20.53125 L 27 11.46875 C 27 7.917969 24.085938 5 20.53125 5 Z M 11.46875 7 L 20.53125 7 C 23.003906 7 25 8.996094 25 11.46875 L 25 20.53125 C 25 23.003906 23.003906 25 20.53125 25 L 11.46875 25 C 8.996094 25 7 23.003906 7 20.53125 L 7 11.46875 C 7 8.996094 8.996094 7 11.46875 7 Z M 21.90625 9.1875 C 21.402344 9.1875 21 9.589844 21 10.09375 C 21 10.597656 21.402344 11 21.90625 11 C 22.410156 11 22.8125 10.597656 22.8125 10.09375 C 22.8125 9.589844 22.410156 9.1875 21.90625 9.1875 Z M 16 10 C 12.699219 10 10 12.699219 10 16 C 10 19.300781 12.699219 22 16 22 C 19.300781 22 22 19.300781 22 16 C 22 12.699219 19.300781 10 16 10 Z M 16 12 C 18.222656 12 20 13.777344 20 16 C 20 18.222656 18.222656 20 16 20 C 13.777344 20 12 18.222656 12 16 C 12 13.777344 13.777344 12 16 12 Z"
+                  />
                 </svg>
               </a>
-              <div class="tooltip">Twitter</div>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/nirav-nayi/" target="_blank">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="fill-white hover:fill-white w-7 h-7"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M21 5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5zm-2.5 8.2v5.3h-2.79v-4.93a1.4 1.4 0 0 0-1.4-1.4c-.77 0-1.39.63-1.39 1.4v4.93h-2.79v-8.37h2.79v1.11c.48-.78 1.47-1.3 2.32-1.3 1.8 0 3.26 1.46 3.26 3.26zM6.88 8.56a1.686 1.686 0 0 0 0-3.37 1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68zm1.39 1.57v8.37H5.5v-8.37h2.77z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  class="fill-white hover:fill-white w-7 h-7"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M22.92 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.83 4.5 17.72 4 16.46 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98-3.56-.18-6.73-1.89-8.84-4.48-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.9 20.29 6.16 21 8.58 21c7.88 0 12.21-6.54 12.21-12.21 0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"
+                  />
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
 
-        <div class="rounded-md basis-[35%] max-[990px]:hidden overflow-hidden">
-          <img class="h-full rounded-3xl object-contain" src="./imges/Hero.jpg" alt="Auther_img" />
+        <div>
+          <h4 class="text-lg font-semibold mb-6 text-white">Contact Us</h4>
+          <ul class="space-y-4">
+            <li>
+              <a href="#" class="text-gray-300 hover:text-white text-sm"
+                >Email</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void(0)"
+                class="text-gray-300 hover:text-white text-sm"
+                >Phone</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void(0)"
+                class="text-gray-300 hover:text-white text-sm"
+                >Address</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-lg font-semibold mb-6 text-white">Information</h4>
+          <ul class="space-y-4">
+            <li>
+              <a
+                href="javascript:void(0)"
+                class="text-gray-300 hover:text-white text-sm"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void(0)"
+                class="text-gray-300 hover:text-white text-sm"
+                >Terms &amp; Conditions</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void(0)"
+                class="text-gray-300 hover:text-white text-sm"
+                >Privacy Policy</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
-    <section id="about" class="mx-auto px-[10%] py-10 h-fit">
-      <div class="h-full">
-        <div class="text-center">
-          <h2 class="underline">About Me</h2>
-          <h3 class="text-secondary text-h6">Who i am</h3>
-        </div>
 
-        <div class="flex flex-wrap max-[768px]:flex-col justify-center max-[990px]:items-center gap-10 w-full mt-10">
-          <div class="basis-[35%]">
-            <img class="rounded-2xl h-[500px] object-contain w-fit" src="./imges/hero1.jpeg" alt="Auther_img" />
-          </div>
+      <p class="text-center text-gray-300 text-sm mt-14">
+        © 2024<a href="#" class="hover:underline mx-1">Nirav</a>All Rights
+        Reserved.
+      </p>
+    </footer>
 
-          <div class="flex-1">
-            <div class="flex items-center gap-3">
-              <!-- <p class="lg:text-h3 max-w-fit font-semibold text-h6 " > I'm Nirav</p> -->
-              <p class="text-h3">I'am</p>
-              <span class="w-fit"><img class="mt-5 w-fit"
-                  src="https://readme-typing-svg.herokuapp.com?font=Righteous&size=35&duration=4000&pause=500&color=61892F&random=false&width=435&lines=Front-End+Developer;Web+Developer;Freelancer"
-                  alt="Typing SVG" /></span>
-            </div>
-            <p class="text-justify mt-5">
-              Crafting Intuitive And Responsive Web Experiences With A Passion
-              For Innovation And Creativity, I'm Rishabh Shah, A 21 Year Old
-              Frontend Developer Currently Completing My Final Year Of B.Tech
-              Studies. Excited To Dive Into The World Of Web Development And
-              Create Engaging User Experiences.
-            </p>
-
-            <ul class="mt-5 list">
-              <li>Profession (Frontend Developer)</li>
-              <li>Education (BCA Student)</li>
-              <li>Skills (Intuitive And Responsive Web Experiences)</li>
-              <li>Personality (Passionate, Innovative, And Creative)</li>
-            </ul>
-            <!-- Resume button -->
-            <div class="voltage-button inline-block mt-7">
-              <a href="./Nirav Resume .pdf" target="_blank" rel="noopener noreferrer">
-                <button>Resume</button>
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 234.6 61.3"
-                  preserveAspectRatio="none" xml:space="preserve">
-                  <filter id="glow">
-                    <feGaussianBlur class="blur" result="coloredBlur" stdDeviation="2"></feGaussianBlur>
-                    <feTurbulence type="fractalNoise" baseFrequency="0.075" numOctaves="0.3" result="turbulence">
-                    </feTurbulence>
-                    <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="30" xChannelSelector="R"
-                      yChannelSelector="G" result="displace"></feDisplacementMap>
-                    <feMerge>
-                      <feMergeNode in="coloredBlur"></feMergeNode>
-                      <feMergeNode in="coloredBlur"></feMergeNode>
-                      <feMergeNode in="coloredBlur"></feMergeNode>
-                      <feMergeNode in="displace"></feMergeNode>
-                      <feMergeNode in="SourceGraphic"></feMergeNode>
-                    </feMerge>
-                  </filter>
-                  <path class="voltage line-1"
-                    d="m216.3 51.2c-3.7 0-3.7-1.1-7.3-1.1-3.7 0-3.7 6.8-7.3 6.8-3.7 0-3.7-4.6-7.3-4.6-3.7 0-3.7 3.6-7.3 3.6-3.7 0-3.7-0.9-7.3-0.9-3.7 0-3.7-2.7-7.3-2.7-3.7 0-3.7 7.8-7.3 7.8-3.7 0-3.7-4.9-7.3-4.9-3.7 0-3.7-7.8-7.3-7.8-3.7 0-3.7-1.1-7.3-1.1-3.7 0-3.7 3.1-7.3 3.1-3.7 0-3.7 10.9-7.3 10.9-3.7 0-3.7-12.5-7.3-12.5-3.7 0-3.7 4.6-7.3 4.6-3.7 0-3.7 4.5-7.3 4.5-3.7 0-3.7 3.6-7.3 3.6-3.7 0-3.7-10-7.3-10-3.7 0-3.7-0.4-7.3-0.4-3.7 0-3.7 2.3-7.3 2.3-3.7 0-3.7 7.1-7.3 7.1-3.7 0-3.7-11.2-7.3-11.2-3.7 0-3.7 3.5-7.3 3.5-3.7 0-3.7 3.6-7.3 3.6-3.7 0-3.7-2.9-7.3-2.9-3.7 0-3.7 8.4-7.3 8.4-3.7 0-3.7-14.6-7.3-14.6-3.7 0-3.7 5.8-7.3 5.8-2.2 0-3.8-0.4-5.5-1.5-1.8-1.1-1.8-2.9-2.9-4.8-1-1.8 1.9-2.7 1.9-4.8 0-3.4-2.1-3.4-2.1-6.8s-9.9-3.4-9.9-6.8 8-3.4 8-6.8c0-2.2 2.1-2.4 3.1-4.2 1.1-1.8 0.2-3.9 2-5 1.8-1 3.1-7.9 5.3-7.9 3.7 0 3.7 0.9 7.3 0.9 3.7 0 3.7 6.7 7.3 6.7 3.7 0 3.7-1.8 7.3-1.8 3.7 0 3.7-0.6 7.3-0.6 3.7 0 3.7-7.8 7.3-7.8h7.3c3.7 0 3.7 4.7 7.3 4.7 3.7 0 3.7-1.1 7.3-1.1 3.7 0 3.7 11.6 7.3 11.6 3.7 0 3.7-2.6 7.3-2.6 3.7 0 3.7-12.9 7.3-12.9 3.7 0 3.7 10.9 7.3 10.9 3.7 0 3.7 1.3 7.3 1.3 3.7 0 3.7-8.7 7.3-8.7 3.7 0 3.7 11.5 7.3 11.5 3.7 0 3.7-1.4 7.3-1.4 3.7 0 3.7-2.6 7.3-2.6 3.7 0 3.7-5.8 7.3-5.8 3.7 0 3.7-1.3 7.3-1.3 3.7 0 3.7 6.6 7.3 6.6s3.7-9.3 7.3-9.3c3.7 0 3.7 0.2 7.3 0.2 3.7 0 3.7 8.5 7.3 8.5 3.7 0 3.7 0.2 7.3 0.2 3.7 0 3.7-1.5 7.3-1.5 3.7 0 3.7 1.6 7.3 1.6s3.7-5.1 7.3-5.1c2.2 0 0.6 9.6 2.4 10.7s4.1-2 5.1-0.1c1 1.8 10.3 2.2 10.3 4.3 0 3.4-10.7 3.4-10.7 6.8s1.2 3.4 1.2 6.8 1.9 3.4 1.9 6.8c0 2.2 7.2 7.7 6.2 9.5-1.1 1.8-12.3-6.5-14.1-5.5-1.7 0.9-0.1 6.2-2.2 6.2z"
-                    fill="transparent" stroke="#fff"></path>
-                  <path class="voltage line-2"
-                    d="m216.3 52.1c-3 0-3-0.5-6-0.5s-3 3-6 3-3-2-6-2-3 1.6-6 1.6-3-0.4-6-0.4-3-1.2-6-1.2-3 3.4-6 3.4-3-2.2-6-2.2-3-3.4-6-3.4-3-0.5-6-0.5-3 1.4-6 1.4-3 4.8-6 4.8-3-5.5-6-5.5-3 2-6 2-3 2-6 2-3 1.6-6 1.6-3-4.4-6-4.4-3-0.2-6-0.2-3 1-6 1-3 3.1-6 3.1-3-4.9-6-4.9-3 1.5-6 1.5-3 1.6-6 1.6-3-1.3-6-1.3-3 3.7-6 3.7-3-6.4-6-6.4-3 2.5-6 2.5h-6c-3 0-3-0.6-6-0.6s-3-1.4-6-1.4-3 0.9-6 0.9-3 4.3-6 4.3-3-3.5-6-3.5c-2.2 0-3.4-1.3-5.2-2.3-1.8-1.1-3.6-1.5-4.6-3.3s-4.4-3.5-4.4-5.7c0-3.4 0.4-3.4 0.4-6.8s2.9-3.4 2.9-6.8-0.8-3.4-0.8-6.8c0-2.2 0.3-4.2 1.3-5.9 1.1-1.8 0.8-6.2 2.6-7.3 1.8-1 5.5-2 7.7-2 3 0 3 2 6 2s3-0.5 6-0.5 3 5.1 6 5.1 3-1.1 6-1.1 3-5.6 6-5.6 3 4.8 6 4.8 3 0.6 6 0.6 3-3.8 6-3.8 3 5.1 6 5.1 3-0.6 6-0.6 3-1.2 6-1.2 3-2.6 6-2.6 3-0.6 6-0.6 3 2.9 6 2.9 3-4.1 6-4.1 3 0.1 6 0.1 3 3.7 6 3.7 3 0.1 6 0.1 3-0.6 6-0.6 3 0.7 6 0.7 3-2.2 6-2.2 3 4.4 6 4.4 3-1.7 6-1.7 3-4 6-4 3 4.7 6 4.7 3-0.5 6-0.5 3-0.8 6-0.8 3-3.8 6-3.8 3 6.3 6 6.3 3-4.8 6-4.8 3 1.9 6 1.9 3-1.9 6-1.9 3 1.3 6 1.3c2.2 0 5-0.5 6.7 0.5 1.8 1.1 2.4 4 3.5 5.8 1 1.8 0.3 3.7 0.3 5.9 0 3.4 3.4 3.4 3.4 6.8s-3.3 3.4-3.3 6.8 4 3.4 4 6.8c0 2.2-6 2.7-7 4.4-1.1 1.8 1.1 6.7-0.7 7.7-1.6 0.8-4.7-1.1-6.8-1.1z"
-                    fill="transparent" stroke="#fff"></path>
-                </svg>
-                <div class="dots">
-                  <div class="dot dot-1"></div>
-                  <div class="dot dot-2"></div>
-                  <div class="dot dot-3"></div>
-                  <div class="dot dot-4"></div>
-                  <div class="dot dot-5"></div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- </div> -->
-    </section>
-
-    <section id="services" class="mx-auto px-[10%] py-10 h-full">
-      <div class="container h-fit">
-        <div class="text-center">
-          <h2 class="underline">My Services</h2>
-          <h3 class="text-secondary text-h6">What i provide</h3>
-        </div>
-        <div class="containers grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 gap-4">
-          <!-- cards -->
-          <div class="card">
-            <div class="content">
-              <div class="back">
-                <div class="back-content">
-                  <img class="h-full rounded-3xl object-contain" src="./imges/uxui.png" alt="uxui_img" />
-                </div>
-              </div>
-              <div class="front">
-                <div class="img">
-                  <div class="circle"></div>
-                  <div class="circle" id="right"></div>
-                  <div class="circle" id="bottom"></div>
-                </div>
-
-                <div class="front-content">
-                  <small class="badge text-[20px]">1</small>
-                  <div class="description">
-                    <div class="title">
-                      <p class="title text-h3 my-3">UX/UI Designer</p>
-                    </div>
-                    <div>
-                      <p class="m-4">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Error architecto dicta, possimus consequuntur a
-                        voluptatum.
-                      </p>
-                    </div>
-                    <p class="card-footer">
-                      <a href="#">Read More</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="content">
-              <div class="back">
-                <div class="back-content">
-                  <img class="h-full rounded-3xl object-contain" src="./imges/wrb-devloper.webp" alt="Auther_img" />
-                </div>
-              </div>
-              <div class="front">
-                <div class="img">
-                  <div class="circle"></div>
-                  <div class="circle" id="right"></div>
-                  <div class="circle" id="bottom"></div>
-                </div>
-
-                <div class="front-content">
-                  <small class="badge text-[20px]">2</small>
-                  <div class="description">
-                    <div class="title">
-                      <p class="title text-h3 my-3">Web Designer</p>
-                    </div>
-                    <div>
-                      <p class="m-4">
-                        Passionate coder 🚀 | Sharing the joy of coding
-                        through posts and tutorials 💻 | Join me on this
-                        journey to explore the world of programming!
-                      </p>
-                    </div>
-                    <p class="card-footer">
-                      <a href="#">Read More</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="content">
-              <div class="back">
-                <div class="back-content">
-                  <img class="h-full rounded-3xl object-contain" src="./imges/app-design.avif" alt="Auther_img" />
-                </div>
-              </div>
-              <div class="front">
-                <div class="img">
-                  <div class="circle"></div>
-                  <div class="circle" id="right"></div>
-                  <div class="circle" id="bottom"></div>
-                </div>
-
-                <div class="front-content">
-                  <small class="badge text-[20px]">3</small>
-                  <div class="description">
-                    <div class="title">
-                      <p class="title text-h3 my-3">App Designer</p>
-                    </div>
-                    <div>
-                      <p class="m-4">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Error architecto dicta, possimus consequuntur a
-                        voluptatum.
-                      </p>
-                    </div>
-                    <p class="card-footer">
-                      <a href="#">Read More</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills" class="mx-auto px-[10%] py-10 h-full">
-      <div class="text-center mb-10">
-        <h2 class="underline">My Skills</h2>
-        <p class="text-secondary text-h6">What I Know</p>
-      </div>
-
-      <div class="flex max-[990px]:flex-col flex-wrap m-5 gap-5">
-        <div class="flex-1 p-1">
-          <p class="text-h5">My creative skills & experiences.</p>
-          <p class="text-justify mt-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nulla
-            veniam expedita consequuntur, explicabo eius alias dolore
-            voluptates veritatis eaque? Iusto debitis necessitatibus, eius
-            nostrum modi distinctio omnis dolorem amet laborum maxime
-            exercitationem quidem delectus quibusdam alias placeat. Impedit
-            porro nisi voluptate repudiandae, excepturi reiciendis quos ipsum
-            cumque non. Et.
-          </p>
-          <button type="button" class="p-2 m-4 rounded-2xl">Read More</button>
-        </div>
-
-        <div class="flex-1">
-          <div class="mb-3">
-            <div class="flex justify-between items-center text-white mb-1">
-              <span>HTML</span>
-              <span>90%</span>
-            </div>
-            <div class="line h-[6px] w-full bg-white relative" data-skill="90%"></div>
-          </div>
-
-          <div class="mb-3">
-            <div class="flex justify-between items-center text-white mb-1">
-              <span>CSS</span>
-              <span>85%</span>
-            </div>
-            <div class="line h-[6px] w-full bg-white relative" data-skill="85%"></div>
-          </div>
-
-          <div class="mb-3">
-            <div class="flex justify-between items-center text-white mb-1">
-              <span>JAVASCRIPT</span>
-              <span>70%</span>
-            </div>
-            <div class="line h-[5px] w-full bg-white relative" data-skill="70%"></div>
-          </div>
-
-          <div class="mb-4">
-            <div class="flex justify-between items-center text-white mb-1">
-              <span>TAILWIND CSS</span>
-              <span>90%</span>
-            </div>
-            <div class="line h-[6px] w-full bg-white relative" data-skill="90%"></div>
-          </div>
-
-          <div class="mb-3">
-            <div class="flex justify-between items-center text-white mb-1">
-              <span>REACT JS</span>
-              <span>65%</span>
-            </div>
-            <div class="line h-[6px] w-full bg-white relative" data-skill="65%"></div>
-          </div>
-
-          <div class="mb-3">
-            <div class="flex justify-between items-center text-white mb-1">
-              <span>REDUX</span>
-              <span>70%</span>
-            </div>
-            <div class="line h-[6px] w-full bg-white relative" data-skill="70%"></div>
-          </div>
-
-          <div class="mb-3">
-            <div class="flex justify-between items-center text-white mb-1">
-              <span>GIT</span>
-              <span>75%</span>
-            </div>
-            <div class="line h-[6px] w-full bg-white relative" data-skill="75%"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="tasks" class="mx-auto px-[10%] py-10 h-full">
-      <div class="text-center mb-10">
-        <h2 class="underline">My Tasks</h2>
-        <p class="text-secondary text-h6">What I Do</p>
-      </div>
-
-      <div
-        class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5 justify-items-center items-center pb-10">
-        <div class="bg-box overflow-hidden px-9 py-6 rounded-lg w-fit">
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <img class="task rounded-full object-cover h-[150px] w-[150px]" src="./imges/portfolio1.webp"
-              alt="portfolio1" />
-          </a>
-        </div>
-
-        <div class="bg-box overflow-hidden px-9 py-6 rounded-lg w-fit">
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <img class="task rounded-full object-cover h-[150px] w-[150px]" src="./imges/html-css.jpg"
-              alt="portfolio1" />
-          </a>
-        </div>
-
-        <div class="bg-box overflow-hidden px-9 py-6 rounded-lg w-fit">
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <img class="task rounded-full object-cover h-[150px] w-[150px]" src="./imges/tic tac toe.png"
-              alt="portfolio1" />
-          </a>
-        </div>
-
-        <div class="bg-box overflow-hidden px-9 py-6 rounded-lg w-fit">
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <img class="task rounded-full object-cover h-[150px] w-[150px]" src="./imges/Top-Ecommerce-Websites.jpg"
-              alt="portfolio1" />
-          </a>
-        </div>
-
-        <div class="bg-box overflow-hidden px-9 py-6 rounded-lg w-fit">
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <img class="task rounded-full object-cover h-[150px] w-[150px]" src="./imges/Top-Ecommerce-Websites.jpg"
-              alt="portfolio1" />
-          </a>
-        </div>
-
-        <div class="bg-box overflow-hidden px-9 py-6 rounded-lg w-fit">
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <img class="task rounded-full object-cover h-[150px] w-[150px]" src="./imges/javascript.png"
-              alt="portfolio1" />
-          </a>
-        </div>
-
-        <div class="bg-box overflow-hidden px-9 py-6 rounded-lg w-fit">
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <img class="task rounded-full object-cover h-[150px] w-[150px]" src="./imges/movie-app.jpeg"
-              alt="portfolio1" />
-          </a>
-        </div>
-
-        <div class="bg-box overflow-hidden px-9 py-6 rounded-lg w-fit">
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <img class="task rounded-full object-cover h-[150px] w-[150px]" src="./imges/quiz-app.jpeg"
-              alt="portfolio1" />
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section id="connect" class="mx-auto px-[10%] py-10 h-full">
-      <div>
-        <div class="text-center mb-10 p-5">
-          <h2 class="underline">Contact Me</h2>
-          <p class="text-secondary text-h6">Get in touch</p>
-        </div>
-
-        <div class="flex max-[990px]:flex-col gap-5">
-          <div class="flex-1 sm:p-3">
-            <div class="mb-5">
-              <h4 class="mb-3">Get in touch</h4>
-              <p class="text-justify">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
-                nam atque laborum odio, repudiandae blanditiis porro sequi
-                cumque, pariatur perspiciatis facere.
-              </p>
-            </div>
-            <div class="flex gap-5 items-center mb-5">
-              <svg class="h-[25px] fill-secondary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                <path
-                  d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
-              </svg>
-
-              <div>
-                <p class="font-semibold text-[18px]">Name</p>
-                <p class="font-semibold text-[18px]">Nirav Nayi</p>
-              </div>
-            </div>
-
-            <div class="flex gap-5 items-center mb-5">
-              <svg class="h-[25px] fill-secondary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                <path
-                  d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
-              </svg>
-              <div>
-                <p class="font-semibold text-[18px]">Phone</p>
-                <p class="font-semibold text-[18px]">+91 78743 11210</p>
-              </div>
-            </div>
-
-            <div class="flex gap-5 items-center mb-5">
-              <svg class="h-[25px] w-[25px] fill-secondary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                <path
-                  d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
-              </svg>
-
-              <div>
-                <p class="font-semibold text-[18px]">Email</p>
-                <p class="font-semibold text-[18px] max-[550px]:text-[15px] max-[550px]:font-medium">
-                  niravlimbachia031@gmail.com
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="flex-1 p-4">
-            <div class="font-semibold text-[20px] text-white">Message Me</div>
-
-            <div>
-              <form action="">
-                <div class="flex max-[768px]:flex-col min-[768px]:gap-10 w-full">
-                  <div class="form-control w-full">
-                    <input type="text" required="" />
-                    <label>
-                     
-                      <span style="transition-delay: 200ms">N</span><span style="transition-delay: 250ms">a</span><span
-                        style="transition-delay: 300ms">m</span><span style="transition-delay: 350ms">e</span>
-                    </label>
-                  </div>
-
-                  <div class="form-control w-full">
-                    <input type="email" required="" />
-                    <label>
-                      <span style="transition-delay: 0ms">E</span><span style="transition-delay: 50ms">m</span><span
-                        style="transition-delay: 100ms">a</span><span style="transition-delay: 150ms">i</span><span
-                        style="transition-delay: 200ms">l</span>
-                    </label>
-                  </div>
-                </div>
-
-                <div class="form-control w-full">
-                  <input type="text" required="" />
-                  <label>
-                    <span style="transition-delay: 0ms">S</span><span style="transition-delay: 50ms">u</span><span
-                      style="transition-delay: 100ms">b</span><span style="transition-delay: 150ms">j</span><span
-                      style="transition-delay: 200ms">e</span><span style="transition-delay: 250ms">c</span><span
-                      style="transition-delay: 300ms">t</span>
-                  </label>
-                </div>
-
-                <div class="form-control w-full">
-                  <textarea></textarea>
-                  <label>
-                    <span style="transition-delay:0ms">M</span><span style="transition-delay:50ms">e</span><span
-                      style="transition-delay:100ms">s</span><span style="transition-delay:150ms">s</span><span
-                      style="transition-delay:200ms">a</span><span style="transition-delay:250ms">g</span><span
-                      style="transition-delay:300ms">e</span>
-                  </label>
-                </div>
-
-
-                <button type="submit">Send Message</button>
-
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const lines = document.querySelectorAll(".line");
-      lines.forEach((line) => {
-        const skillLevel = line.getAttribute("data-skill");
-        line.style.setProperty("--skill-level", skillLevel);
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const lines = document.querySelectorAll(".line");
+        lines.forEach((line) => {
+          const skillLevel = line.getAttribute("data-skill");
+          line.style.setProperty("--skill-level", skillLevel);
+        });
       });
-    });
-  </script>
-</body>
-
+    </script>
+  </body>
 </html>
