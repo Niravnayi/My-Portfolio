@@ -58,12 +58,8 @@
       }
 
       @layer components {
-        .btn {
-          @apply px-4 py-4 rounded-full text-white bg-secondary hover:text-green hover:bg-cardbg;
-        }
-        .btn--social {
-          @apply px-5 py-3 rounded-full bg-green text-white;
-        }
+        
+       
         .nav {
           @apply relative;
         }
@@ -113,12 +109,14 @@
 
               <a href="#connect">
               <button class="button">
-                <span class="button-content">Connect🤝 </span>
+                
+                <span class="button-content">Connect🤝</span>
               </button>
             </a>
               
             </div>
           </header>
+          
         </div>
 
         <div class="flex h-full items-center mt-20">
@@ -716,7 +714,8 @@
                     class="flex max-[768px]:flex-col min-[768px]:gap-10 w-full"
                   >
                     <div class="form-control w-full">
-                      <input type="text" required="" />
+                      <label for="name" class="sr-only">name</label>
+                      <input type="text" id="name" required="" />
                       <label>
                         <span style="transition-delay: 200ms">N</span
                         ><span style="transition-delay: 250ms">a</span
@@ -726,7 +725,8 @@
                     </div>
 
                     <div class="form-control w-full">
-                      <input type="email" required="" />
+                      <label for="email" class="sr-only">email</label>
+                      <input type="email" id="email" required="" />
                       <label>
                         <span style="transition-delay: 0ms">E</span
                         ><span style="transition-delay: 50ms">m</span
@@ -738,7 +738,8 @@
                   </div>
 
                   <div class="form-control w-full">
-                    <input type="text" required="" />
+                    <label for="subject">subject</label>
+                    <input type="text" id="subject" required="" />
                     <label>
                       <span style="transition-delay: 0ms">S</span
                       ><span style="transition-delay: 50ms">u</span
