@@ -58,8 +58,6 @@
       }
 
       @layer components {
-        
-       
         .nav {
           @apply relative;
         }
@@ -82,46 +80,58 @@
               <h2><span class="text-secondary text-h1">N</span>IRAV</h2>
               <span class="sr-only">Nirav logo</span>
             </a>
-            <div class="max-[989px]:block min-[990px]:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="fill-white"
-                height="40px"
-                viewBox="0 -960 960 960"
-                width="40px"
-                fill="#e8eaed"
-              >
-                <path
-                  d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
-                />
-              </svg>
-            </div>
-            <div class="max-[990px]:hidden flex gap-5 items-center">
+
+            <div class="flex gap-5 items-center">
               <nav>
-                <ul class="flex gap-10 items-center">
+                <ul
+                  id="sidemenu"
+                  class="flex max-[990px]:block gap-10 items-center"
+                >
                   <li><a href="#home" class="nav">Home</a></li>
                   <li><a href="#about" class="nav">About</a></li>
                   <li><a href="#services" class="nav">Services</a></li>
                   <li><a href="#skills" class="nav">Skills</a></li>
                   <li><a href="#tasks" class="nav">Tasks</a></li>
+                  <a href="#connect" class="max-[990px]:hidden">
+                    <button class="button">
+                      <span class="button-content">Connect🤝</span>
+                    </button>
+                  </a>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="fas fill-white"
+                    onclick="closemenu()"
+                    height="40px"
+                    viewBox="0 0 384 512"
+                  >
+                    <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                      d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                    />
+                  </svg>
                 </ul>
-              </nav>
 
-              <a href="#connect">
-              <button class="button">
-                
-                <span class="button-content">Connect🤝</span>
-              </button>
-            </a>
-              
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="fas fill-white"
+                  onclick="openmenu()"
+                  height="40px"
+                  viewBox="0 -960 960 960"
+                  width="40px"
+                  fill="#e8eaed"
+                >
+                  <path
+                    d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+                  />
+                </svg>
+              </nav>
             </div>
           </header>
-          
         </div>
 
         <div class="flex h-full items-center mt-20">
           <div
-            class="basis-[60%] min-[320px]:w-full flex flex-grow-[600px] flex-col justify-center"
+            class="min-[320px]:w-full flex flex-grow-[600px] flex-col justify-center"
           >
             <h2 class="font-bold md:text-h3 min-[320px]:text-h4">
               Hello,My Name Is
@@ -237,9 +247,6 @@
             </ul>
           </div>
 
-          <!-- <div class="rounded-md basis-[35%] max-[990px]:hidden overflow-hidden">
-          <img class="h-full rounded-3xl object-contain " src="./imges/Hero.jpg" alt="Auther_img" />
-        </div> -->
         </div>
       </section>
       <section id="about" class="mx-auto px-[10%] py-10 h-fit">
@@ -253,11 +260,10 @@
             class="flex flex-wrap max-[768px]:flex-col justify-center max-[990px]:items-center gap-10 w-full mt-10"
           >
             <div class="basis-[35%]">
-              <img
-                class="rounded-2xl h-[500px] object-contain w-fit duration-500 hover:rounded-[40%]"
-                src="./imges/hero1.jpeg"
-                alt="Auther_img"
-              />
+              
+                <img class="rounded-2xl h-[500px] object-contain w-fit duration-500 hover:rounded-[50%]" src="./imges/Hero.jpg" alt="Auther_img" />
+              
+             
             </div>
 
             <div class="flex-1">
@@ -273,8 +279,8 @@
               </div>
               <p class="text-justify mt-5">
                 Crafting Intuitive And Responsive Web Experiences With A Passion
-                For Innovation And Creativity, I'm Rishabh Shah, A 21 Year Old
-                Frontend Developer Currently Completing My Final Year Of B.Tech
+                For Innovation And Creativity, I'm Nirav Nayi, A 18 Year Old
+                Frontend Developer Currently Completing My Final Year Of BCA
                 Studies. Excited To Dive Into The World Of Web Development And
                 Create Engaging User Experiences.
               </p>
@@ -286,16 +292,19 @@
                 <li>Personality (Passionate, Innovative, And Creative)</li>
               </ul>
               <!-- Resume button -->
-             <a href="./Nirav Resume .pdf" target="_blank" rel="noopener noreferrer">
-              <button class="button mt-5" >
-                <span class="button-content">Resume 📑 </span>
-              </button>
-            </a>
-              
+              <a
+                href="./Nirav Resume .pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button class="button mt-5">
+                  <span class="button-content">Resume 📑 </span>
+                </button>
+              </a>
             </div>
           </div>
         </div>
-        <!-- </div> -->
+        
       </section>
 
       <section id="services" class="mx-auto px-[10%] py-10 h-full">
@@ -370,7 +379,7 @@
                     <small class="badge text-[20px]">2</small>
                     <div class="description">
                       <div class="title">
-                        <p class="title text-h3 my-3">Web Designer</p>
+                        <p class="title text-h3 my-3">Web Developer</p>
                       </div>
                       <div>
                         <p class="m-4">
@@ -410,7 +419,7 @@
                     <small class="badge text-[20px]">3</small>
                     <div class="description">
                       <div class="title">
-                        <p class="title text-h3 my-3">App Designer</p>
+                        <p class="title text-h3 my-3">App Developer</p>
                       </div>
                       <div>
                         <p class="m-4">
@@ -449,12 +458,11 @@
               porro nisi voluptate repudiandae, excepturi reiciendis quos ipsum
               cumque non. Et.
             </p>
-           
-            <a href="#"> 
+
+            <a href="#">
               <button class="button mt-5">
                 <span class="button-content">Read More🧾</span>
               </button>
-              
             </a>
           </div>
 
@@ -709,13 +717,13 @@
               <div class="font-semibold text-[20px] text-white">Message Me</div>
 
               <div>
-                <form action="">
+                <form name="submit-to-google-sheet">
                   <div
                     class="flex max-[768px]:flex-col min-[768px]:gap-10 w-full"
                   >
                     <div class="form-control w-full">
                       <label for="name" class="sr-only">name</label>
-                      <input type="text" id="name" required="" />
+                      <input type="text" name="Name"  id="name" required="" />
                       <label>
                         <span style="transition-delay: 200ms">N</span
                         ><span style="transition-delay: 250ms">a</span
@@ -726,7 +734,7 @@
 
                     <div class="form-control w-full">
                       <label for="email" class="sr-only">email</label>
-                      <input type="email" id="email" required="" />
+                      <input type="email" name="Email" id="email" required="" />
                       <label>
                         <span style="transition-delay: 0ms">E</span
                         ><span style="transition-delay: 50ms">m</span
@@ -738,8 +746,8 @@
                   </div>
 
                   <div class="form-control w-full">
-                    <label for="subject">subject</label>
-                    <input type="text" id="subject" required="" />
+                    <label for="subject" class="sr-only">subject</label>
+                    <input type="text" name="Subject" id="subject" required="" />
                     <label>
                       <span style="transition-delay: 0ms">S</span
                       ><span style="transition-delay: 50ms">u</span
@@ -752,7 +760,7 @@
                   </div>
 
                   <div class="form-control w-full">
-                    <textarea></textarea>
+                    <textarea name="Message"></textarea>
                     <label>
                       <span style="transition-delay: 0ms">M</span
                       ><span style="transition-delay: 50ms">e</span
@@ -764,11 +772,11 @@
                     </label>
                   </div>
 
-                  <button class="button">
+                  <button class="button" type="submit">
                     <span class="button-content">Send Message💬 </span>
                   </button>
-                  
                 </form>
+                <span id="msg" class="text-secondary mt-10 block"></span>
               </div>
             </div>
           </div>
@@ -906,5 +914,35 @@
         });
       });
     </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyY5O8K2ENB9qowmJTuz04URFtQxeANkeSWEYEH-M0PoumD35dGVHREYlZLe4EBSzyn/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message Sent Successfully"
+        setTimeout(function(){
+          msg.innerHTML = "" 
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
   </body>
 </html>

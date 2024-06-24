@@ -8,7 +8,7 @@ html {
   z-index: -2;
 }
 
-body {
+*{
   font-family: "Poppins", sans-serif;
 }
 
@@ -22,6 +22,38 @@ footer {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
+}
+
+nav .fas{
+  display: none;
+}
+
+@media only screen and (max-width: 990px) {
+  nav .fas{
+    display: block;
+  }
+  nav ul{
+    background-color: #61892f;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+   z-index: 2;
+   transition: right 0.5s;
+
+  }
+  nav ul li{
+    display: block;
+    margin: 25px;
+  }
+  nav ul .fas{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
 }
 
 .list {
@@ -162,104 +194,6 @@ ul {
   );
   transition: all 0.475s;
 }
-button {
-  height: 3em;
-  width: fit-content;
-  border: none;
-  border-radius: 10em;
-  background: #016DD9;
-  font-size: 17px;
-  color: #ffffff;
-  font-family: inherit;
-  font-weight: 500;
- }
- 
- button:hover {
-  animation: shake3856 0.3s linear infinite both;
- }
- 
- @keyframes shake3856 {
-  0% {
-   -webkit-transform: translate(0);
-   transform: translate(0);
-  }
- 
-  20% {
-   -webkit-transform: translate(-2px, 2px);
-   transform: translate(-2px, 2px);
-  }
- 
-  40% {
-   -webkit-transform: translate(-2px, -2px);
-   transform: translate(-2px, -2px);
-  }
- 
-  60% {
-   -webkit-transform: translate(2px, 2px);
-   transform: translate(2px, 2px);
-  }
- 
-  80% {
-   -webkit-transform: translate(2px, -2px);
-   transform: translate(2px, -2px);
-  }
- 
-  100% {
-   -webkit-transform: translate(0);
-   transform: translate(0);
-  }
- }
- 
-
-
-/* .timeline::after {
-  content: '';
-  position: absolute;
-  width: 4px;
-  height: 100%;
-  background-color: white;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
-  z-index: 0;
-  animation: moveline 6s linear forwards;
-}
-
-@keyframes moveline{
-  0%{
-    height: 0;
-  }
-  100%{
-    height: 100%;
-  }
-}
-
-@media screen and (max-width:768px) {
-  
-  .timeline{
-    margin: 50px auto;
-  }
-  .timeline::after{
-    left: 31px;
-  }
-  .contain{
-    width: 100%;
-    padding-left: 80px;
-    padding-right: 25px;
-    
-  }
-
-  .textbox small{
-    margin-bottom: 10px;
-  }
-  .rightcontain {
-    left: 0;
-  }
-  .image{
-    left: 10px;
-  }
-} */
 
 .card {
   overflow: visible;
