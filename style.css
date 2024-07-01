@@ -197,7 +197,7 @@ ul {
 
 .card {
   overflow: visible;
-  height: 350px;
+  height: 380px;
 }
 
 .content {
@@ -476,3 +476,5 @@ ul {
   resize: none;
   height: 100px;
 }
+
+
