@@ -249,7 +249,7 @@
             <div class="content">
               <div class="back">
                 <div class="back-content">
-                  <img class="h-full rounded-3xl object-contain" src="./imges/uxui.png" alt="uxui_img" />
+                  <img class="h-full rounded-3xl object-contain" src="./imges/UI-UX.png" alt="uxui_img" />
                 </div>
               </div>
               <div class="front">
@@ -285,7 +285,7 @@
             <div class="content">
               <div class="back">
                 <div class="back-content">
-                  <img class="h-full rounded-3xl object-contain" src="./imges/wrb-devloper.webp" alt="Auther_img" />
+                  <img class="h-full rounded-3xl object-contain" src="./imges/web-design (1).png" alt="Auther_img" />
                 </div>
               </div>
               <div class="front">
@@ -321,7 +321,7 @@
             <div class="content">
               <div class="back">
                 <div class="back-content">
-                  <img class="h-full rounded-3xl object-contain" src="./imges/app-design.avif" alt="Auther_img" />
+                  <img class="h-full rounded-3xl object-contain" src="./imges/App-design.png" alt="Auther_img" />
                 </div>
               </div>
               <div class="front">
@@ -656,10 +656,10 @@
           </li>
           <li>
             <a href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="fill-white hover:fill-white w-7 h-7"
-                viewBox="0 0 24 24">
+              <svg xmlns="http://www.w3.org/2000/svg"  class="fill-white hover:fill-white w-7 h-6" viewBox="0 0 512 512">
+                <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                 <path
-                  d="M22.92 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.83 4.5 17.72 4 16.46 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98-3.56-.18-6.73-1.89-8.84-4.48-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.9 20.29 6.16 21 8.58 21c7.88 0 12.21-6.54 12.21-12.21 0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z" />
+                  d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
               </svg>
             </a>
           </li>
@@ -702,7 +702,33 @@
       Reserved.
     </p>
   </footer>
+  <button id="backToTopBtn" title="Go to top">Top</button>
 
+
+  <script>
+// Get the button
+let backToTopBtn = document.getElementById("backToTopBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        backToTopBtn.style.display = "block";
+    } else {
+        backToTopBtn.style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+backToTopBtn.addEventListener("click", function() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+});
+
+  </script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const lines = document.querySelectorAll(".line");
