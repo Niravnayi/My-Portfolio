@@ -4,7 +4,7 @@ html {
 }
 
 #home {
-  background-image: url(./imges/background.png);
+  background-image: url(./imges/background.webp);
   z-index: -2;
 }
 
